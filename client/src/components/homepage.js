@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import {Logo} from './pics';
 import {Link} from 'react-router-dom';
 import pics from './images/example.jpg';
+import food from './images/food.jpg';
+import yoga from './images/yoga.jpg'
 function Homepage () {
   const settings = {
     dots: true,
@@ -18,7 +20,7 @@ function Homepage () {
     autoplaySpeed: 10000,
   };
   const [news, setNews] = useState ([]);
-  /*useEffect (
+  useEffect (
     () => {
       axios
         .get (
@@ -31,7 +33,7 @@ function Homepage () {
         .catch ();
     },
     [news]
-  );*/
+  );
   return (
     <div className="container-page">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -142,10 +144,10 @@ function Homepage () {
 
                 </div>
                 <div>
-                  <h3>SLIDE 2</h3>
+                  <img className="img" src={yoga}/>
                 </div>
                 <div>
-                  <h3>SLIDE 3</h3>
+                  <img className="img" src={food}/>
                 </div>
               </Slider>
             </div>
