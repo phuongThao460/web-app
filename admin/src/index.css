@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: whitesmoke;
+}
